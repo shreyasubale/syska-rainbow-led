@@ -46,6 +46,15 @@ SyskaLed.prototype.turnOff = function(callback) {
 };
 
 SyskaLed.prototype.setColorAndBrightness = function(red, green, blue, brightness, callback) {
+    function convert(integer) {
+        var str = Number(integer).toString(16);
+        return str.length == 1 ? "0" + str : str;
+    };
+  red = convert(red);
+  blue = convert(blue);
+  green = convert(green);
+  brightness = brightness?convert(brightness):"00";
+
   this.writeControlCharateristic(red, green, blue, brightness, callback);
 };
 
