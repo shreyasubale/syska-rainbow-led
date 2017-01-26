@@ -2,7 +2,7 @@
   "name": "syska-rainbow-led",
   "version": "1.0.0",
   "description": "Module to control syska rainbow led",
-  "main": "index.js",
+  "main": "syska2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,9 @@
   "author": "Shreyas Ubale <shreyasubale@gmail.com> (http://www.devmire.com)",
   "license": "ISC",
   "dependencies": {
-    "noble": "^1.7.0"
+    "noble": "^1.7.0",
+    "noble-device": "^1.4.1",
+    "underscore": "^1.8.3",
+    "util": "^0.10.3"
   }
 }
